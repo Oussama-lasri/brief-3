@@ -210,6 +210,7 @@ footer{
     .class-about{
         flex-direction: column;
     }
+   
 }
 
 /* ----------- */
@@ -227,10 +228,16 @@ footer{
     background-color: #E99C2F;
     color: white;
    font-weight: bolder;
-   border-radius: 8px;    
+   border-radius: 8px;
+      
+}
+button:hover{
+    background-color:white;
+    color: #E99C2F;
 }
 .cartes{
     display: flex;
+    flex-wrap: wrap;
     gap: 20Px;
 }
 
@@ -290,8 +297,15 @@ footer{
     display:flex;
     flex-direction: column;
     border-radius: 15px;
+    position: fixed;
+    right: 10px;
+   
 
     
+}
+.Produit{
+     max-height: 300PX;
+    overflow-y: scroll;
 }
 .titre-panier{
     height: 15%;
@@ -336,6 +350,22 @@ footer{
 
 /* media query */
 @media (max-width: 768px){
+    .panier{
+        position: static;
+        margin-left: 28%;
+        /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */}   
+    .cartes{
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .Menu{
+        align-items: center;
+        justify-content: center;
+    }
 
 
 }
@@ -413,3 +443,9 @@ label{
 
 
 
+/* .maki{
+    display: none ;
+}
+.Nigiri{
+    display: none;
+} */
